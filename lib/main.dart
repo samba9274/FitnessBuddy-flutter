@@ -1,21 +1,10 @@
+import 'package:fitness_buddy/screens/signin.dart';
+import 'package:fitness_buddy/screens/signup.dart';
+import 'package:fitness_buddy/screens/username.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const HomePage());
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'FitnessBuddy',
-      home: Scaffold(
-        body: Center(
-          child: Text('Welcome to FitnessBuddy'),
-        ),
-      ),
-    );
-  }
+  runApp(const SigninPage());
+  // runApp(const SignupPage());
+  // runApp(const UsernamePage());
 }
